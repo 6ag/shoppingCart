@@ -10,8 +10,6 @@
 		A57AB3E01BFB6C3100012F62 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57AB3DF1BFB6C3100012F62 /* AppDelegate.swift */; };
 		A57AB3E71BFB6C3100012F62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A57AB3E61BFB6C3100012F62 /* Assets.xcassets */; };
 		A57AB3EA1BFB6C3100012F62 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A57AB3E81BFB6C3100012F62 /* LaunchScreen.storyboard */; };
-		A57AB3F41BFB6D1000012F62 /* JFGoodListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57AB3F31BFB6D1000012F62 /* JFGoodListViewController.swift */; };
-		A57AB3F61BFB6D2100012F62 /* JFShoppingCartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57AB3F51BFB6D2100012F62 /* JFShoppingCartViewController.swift */; };
 		A57AB4181BFB6E6500012F62 /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57AB4091BFB6E6500012F62 /* Constraint.swift */; };
 		A57AB4191BFB6E6500012F62 /* ConstraintAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57AB40A1BFB6E6500012F62 /* ConstraintAttributes.swift */; };
 		A57AB41A1BFB6E6500012F62 /* ConstraintDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57AB40B1BFB6E6500012F62 /* ConstraintDescription.swift */; };
@@ -25,10 +23,12 @@
 		A57AB4231BFB6E6500012F62 /* SourceLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57AB4151BFB6E6500012F62 /* SourceLocation.swift */; };
 		A57AB4241BFB6E6500012F62 /* View+SnapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57AB4161BFB6E6500012F62 /* View+SnapKit.swift */; };
 		A57AB4251BFB6E6500012F62 /* ViewController+SnapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57AB4171BFB6E6500012F62 /* ViewController+SnapKit.swift */; };
-		A57AB42A1BFB6EF800012F62 /* JFGoodModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57AB4291BFB6EF800012F62 /* JFGoodModel.swift */; };
-		A57AB42C1BFB7A0500012F62 /* JFGoodListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57AB42B1BFB7A0500012F62 /* JFGoodListCell.swift */; };
-		A59D4B131BFC2169009AC51B /* JFShoppingCartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59D4B121BFC2169009AC51B /* JFShoppingCartCell.swift */; };
-		A59D4B151BFC37A9009AC51B /* JFOldPriceLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59D4B141BFC37A9009AC51B /* JFOldPriceLabel.swift */; };
+		A59F9BBC1BFCD30E0076221A /* JFGoodModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59F9BBB1BFCD30E0076221A /* JFGoodModel.swift */; };
+		A59F9BCA1BFCD3220076221A /* JFGoodListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59F9BBF1BFCD3220076221A /* JFGoodListViewController.swift */; };
+		A59F9BCB1BFCD3220076221A /* JFGoodListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59F9BC21BFCD3220076221A /* JFGoodListCell.swift */; };
+		A59F9BCC1BFCD3220076221A /* JFShoppingCartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59F9BC51BFCD3220076221A /* JFShoppingCartViewController.swift */; };
+		A59F9BCD1BFCD3220076221A /* JFOldPriceLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59F9BC81BFCD3220076221A /* JFOldPriceLabel.swift */; };
+		A59F9BCE1BFCD3220076221A /* JFShoppingCartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59F9BC91BFCD3220076221A /* JFShoppingCartCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,8 +37,6 @@
 		A57AB3E61BFB6C3100012F62 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A57AB3E91BFB6C3100012F62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A57AB3EB1BFB6C3100012F62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A57AB3F31BFB6D1000012F62 /* JFGoodListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JFGoodListViewController.swift; path = ../../../JFGoodListViewController.swift; sourceTree = "<group>"; };
-		A57AB3F51BFB6D2100012F62 /* JFShoppingCartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JFShoppingCartViewController.swift; path = ../../../JFShoppingCartViewController.swift; sourceTree = "<group>"; };
 		A57AB4091BFB6E6500012F62 /* Constraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constraint.swift; sourceTree = "<group>"; };
 		A57AB40A1BFB6E6500012F62 /* ConstraintAttributes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintAttributes.swift; sourceTree = "<group>"; };
 		A57AB40B1BFB6E6500012F62 /* ConstraintDescription.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintDescription.swift; sourceTree = "<group>"; };
@@ -53,10 +51,12 @@
 		A57AB4151BFB6E6500012F62 /* SourceLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SourceLocation.swift; sourceTree = "<group>"; };
 		A57AB4161BFB6E6500012F62 /* View+SnapKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+SnapKit.swift"; sourceTree = "<group>"; };
 		A57AB4171BFB6E6500012F62 /* ViewController+SnapKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+SnapKit.swift"; sourceTree = "<group>"; };
-		A57AB4291BFB6EF800012F62 /* JFGoodModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFGoodModel.swift; sourceTree = "<group>"; };
-		A57AB42B1BFB7A0500012F62 /* JFGoodListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFGoodListCell.swift; sourceTree = "<group>"; };
-		A59D4B121BFC2169009AC51B /* JFShoppingCartCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFShoppingCartCell.swift; sourceTree = "<group>"; };
-		A59D4B141BFC37A9009AC51B /* JFOldPriceLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFOldPriceLabel.swift; sourceTree = "<group>"; };
+		A59F9BBB1BFCD30E0076221A /* JFGoodModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFGoodModel.swift; sourceTree = "<group>"; };
+		A59F9BBF1BFCD3220076221A /* JFGoodListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFGoodListViewController.swift; sourceTree = "<group>"; };
+		A59F9BC21BFCD3220076221A /* JFGoodListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFGoodListCell.swift; sourceTree = "<group>"; };
+		A59F9BC51BFCD3220076221A /* JFShoppingCartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFShoppingCartViewController.swift; sourceTree = "<group>"; };
+		A59F9BC81BFCD3220076221A /* JFOldPriceLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFOldPriceLabel.swift; sourceTree = "<group>"; };
+		A59F9BC91BFCD3220076221A /* JFShoppingCartCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFShoppingCartCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,47 +101,12 @@
 		A57AB3FA1BFB6DB600012F62 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				A59F9BBD1BFCD3220076221A /* GoodList */,
+				A59F9BC31BFCD3220076221A /* ShopCart */,
+				A59F9BBA1BFCD30E0076221A /* Model */,
 				A57AB3FF1BFB6DB600012F62 /* Library */,
-				A57AB4261BFB6EA800012F62 /* Model */,
-				A57AB4001BFB6DB600012F62 /* Main */,
-				A57AB3FB1BFB6DB600012F62 /* GoodList(商品列表) */,
-				A57AB4041BFB6DB600012F62 /* ShopCart(购物车) */,
 			);
 			path = Classes;
-			sourceTree = "<group>";
-		};
-		A57AB3FB1BFB6DB600012F62 /* GoodList(商品列表) */ = {
-			isa = PBXGroup;
-			children = (
-				A57AB3FC1BFB6DB600012F62 /* Controller */,
-				A57AB3FD1BFB6DB600012F62 /* Model */,
-				A57AB3FE1BFB6DB600012F62 /* View */,
-			);
-			name = "GoodList(商品列表)";
-			path = GoodList;
-			sourceTree = "<group>";
-		};
-		A57AB3FC1BFB6DB600012F62 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				A57AB3F31BFB6D1000012F62 /* JFGoodListViewController.swift */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		A57AB3FD1BFB6DB600012F62 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		A57AB3FE1BFB6DB600012F62 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				A57AB42B1BFB7A0500012F62 /* JFGoodListCell.swift */,
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		A57AB3FF1BFB6DB600012F62 /* Library */ = {
@@ -150,72 +115,6 @@
 				A57AB4081BFB6E6500012F62 /* SnapKit */,
 			);
 			path = Library;
-			sourceTree = "<group>";
-		};
-		A57AB4001BFB6DB600012F62 /* Main */ = {
-			isa = PBXGroup;
-			children = (
-				A57AB4011BFB6DB600012F62 /* Controller */,
-				A57AB4021BFB6DB600012F62 /* Model */,
-				A57AB4031BFB6DB600012F62 /* View */,
-			);
-			path = Main;
-			sourceTree = "<group>";
-		};
-		A57AB4011BFB6DB600012F62 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		A57AB4021BFB6DB600012F62 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		A57AB4031BFB6DB600012F62 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		A57AB4041BFB6DB600012F62 /* ShopCart(购物车) */ = {
-			isa = PBXGroup;
-			children = (
-				A57AB4051BFB6DB600012F62 /* Controller */,
-				A57AB4061BFB6DB600012F62 /* Model */,
-				A57AB4071BFB6DB600012F62 /* View */,
-			);
-			name = "ShopCart(购物车)";
-			path = ShopCart;
-			sourceTree = "<group>";
-		};
-		A57AB4051BFB6DB600012F62 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				A57AB3F51BFB6D2100012F62 /* JFShoppingCartViewController.swift */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		A57AB4061BFB6DB600012F62 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		A57AB4071BFB6DB600012F62 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				A59D4B121BFC2169009AC51B /* JFShoppingCartCell.swift */,
-				A59D4B141BFC37A9009AC51B /* JFOldPriceLabel.swift */,
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		A57AB4081BFB6E6500012F62 /* SnapKit */ = {
@@ -239,12 +138,79 @@
 			path = SnapKit;
 			sourceTree = "<group>";
 		};
-		A57AB4261BFB6EA800012F62 /* Model */ = {
+		A59F9BBA1BFCD30E0076221A /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				A57AB4291BFB6EF800012F62 /* JFGoodModel.swift */,
+				A59F9BBB1BFCD30E0076221A /* JFGoodModel.swift */,
 			);
-			name = Model;
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A59F9BBD1BFCD3220076221A /* GoodList */ = {
+			isa = PBXGroup;
+			children = (
+				A59F9BBE1BFCD3220076221A /* Controller */,
+				A59F9BC01BFCD3220076221A /* Model */,
+				A59F9BC11BFCD3220076221A /* View */,
+			);
+			path = GoodList;
+			sourceTree = "<group>";
+		};
+		A59F9BBE1BFCD3220076221A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A59F9BBF1BFCD3220076221A /* JFGoodListViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A59F9BC01BFCD3220076221A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A59F9BC11BFCD3220076221A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A59F9BC21BFCD3220076221A /* JFGoodListCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A59F9BC31BFCD3220076221A /* ShopCart */ = {
+			isa = PBXGroup;
+			children = (
+				A59F9BC41BFCD3220076221A /* Controller */,
+				A59F9BC61BFCD3220076221A /* Model */,
+				A59F9BC71BFCD3220076221A /* View */,
+			);
+			path = ShopCart;
+			sourceTree = "<group>";
+		};
+		A59F9BC41BFCD3220076221A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A59F9BC51BFCD3220076221A /* JFShoppingCartViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A59F9BC61BFCD3220076221A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A59F9BC71BFCD3220076221A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A59F9BC81BFCD3220076221A /* JFOldPriceLabel.swift */,
+				A59F9BC91BFCD3220076221A /* JFShoppingCartCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -320,24 +286,24 @@
 			files = (
 				A57AB41B1BFB6E6500012F62 /* ConstraintItem.swift in Sources */,
 				A57AB4231BFB6E6500012F62 /* SourceLocation.swift in Sources */,
+				A59F9BBC1BFCD30E0076221A /* JFGoodModel.swift in Sources */,
 				A57AB41D1BFB6E6500012F62 /* ConstraintRelation.swift in Sources */,
 				A57AB4221BFB6E6500012F62 /* SnapKit.swift in Sources */,
+				A59F9BCE1BFCD3220076221A /* JFShoppingCartCell.swift in Sources */,
 				A57AB41E1BFB6E6500012F62 /* Debugging.swift in Sources */,
+				A59F9BCD1BFCD3220076221A /* JFOldPriceLabel.swift in Sources */,
 				A57AB41F1BFB6E6500012F62 /* EdgeInsets.swift in Sources */,
-				A59D4B151BFC37A9009AC51B /* JFOldPriceLabel.swift in Sources */,
 				A57AB4181BFB6E6500012F62 /* Constraint.swift in Sources */,
-				A57AB42A1BFB6EF800012F62 /* JFGoodModel.swift in Sources */,
-				A57AB3F61BFB6D2100012F62 /* JFShoppingCartViewController.swift in Sources */,
 				A57AB3E01BFB6C3100012F62 /* AppDelegate.swift in Sources */,
 				A57AB4191BFB6E6500012F62 /* ConstraintAttributes.swift in Sources */,
 				A57AB4211BFB6E6500012F62 /* LayoutConstraint.swift in Sources */,
-				A57AB42C1BFB7A0500012F62 /* JFGoodListCell.swift in Sources */,
 				A57AB4251BFB6E6500012F62 /* ViewController+SnapKit.swift in Sources */,
-				A59D4B131BFC2169009AC51B /* JFShoppingCartCell.swift in Sources */,
+				A59F9BCC1BFCD3220076221A /* JFShoppingCartViewController.swift in Sources */,
 				A57AB4241BFB6E6500012F62 /* View+SnapKit.swift in Sources */,
+				A59F9BCA1BFCD3220076221A /* JFGoodListViewController.swift in Sources */,
 				A57AB41C1BFB6E6500012F62 /* ConstraintMaker.swift in Sources */,
-				A57AB3F41BFB6D1000012F62 /* JFGoodListViewController.swift in Sources */,
 				A57AB41A1BFB6E6500012F62 /* ConstraintDescription.swift in Sources */,
+				A59F9BCB1BFCD3220076221A /* JFGoodListCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
