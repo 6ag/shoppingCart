@@ -81,7 +81,6 @@ class JFGoodListCell: UITableViewCell {
             make.left.equalTo(iconView.snp_right).offset(12)
         }
         
-        
     }
     
     // MARK: - 响应事件

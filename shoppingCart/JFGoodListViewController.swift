@@ -25,7 +25,7 @@ class JFGoodListViewController: UIViewController {
     private var addGoodArray = [JFGoodModel]()
     
     /// 贝塞尔曲线
-    private var path = UIBezierPath()
+    private var path: UIBezierPath?
     
     /// 自定义图层
     var layer: CALayer?
@@ -231,12 +231,10 @@ extension JFGoodListViewController {
             layer?.position = CGPoint(x: iconView.center.x, y: CGRectGetMinY(rect) + 96)
             UIApplication.sharedApplication().keyWindow?.layer.addSublayer(layer!)
             
-            path.moveToPoint(layer!.position)
-            path.addQuadCurveToPoint(CGPoint(x: SCREEN_WIDTH - 25, y: 35), controlPoint: CGPoint(x: SCREEN_WIDTH * 0.5, y: rect.origin.y - 80))
+            path = UIBezierPath()
+            path!.moveToPoint(layer!.position)
+            path!.addQuadCurveToPoint(CGPoint(x: SCREEN_WIDTH - 25, y: 35), controlPoint: CGPoint(x: SCREEN_WIDTH * 0.5, y: rect.origin.y - 80))
         }
-        
-        // 默认显示图层
-        layer?.hidden = false
         
         // 组动画
         groupAnimation()
@@ -252,7 +250,7 @@ extension JFGoodListViewController {
         
         // 帧动画
         let animation = CAKeyframeAnimation(keyPath: "position")
-        animation.path = path.CGPath
+        animation.path = path!.CGPath
         animation.rotationMode = kCAAnimationRotateAuto
         
         // 放大动画
@@ -292,7 +290,9 @@ extension JFGoodListViewController {
             tableView.userInteractionEnabled = true
             
             // 隐藏图层
-            layer?.hidden = true
+            layer?.removeAllAnimations()
+            layer?.removeFromSuperlayer()
+            layer = nil
             
             // 如果商品数大于0，显示购物车里的商品数量
             if self.addGoodArray.count > 0 {
