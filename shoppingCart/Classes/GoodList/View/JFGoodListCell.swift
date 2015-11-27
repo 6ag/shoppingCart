@@ -74,7 +74,6 @@ class JFGoodListCell: UITableViewCell {
         iconView.snp_makeConstraints { (make) -> Void in
             make.left.equalTo(12)
             make.top.equalTo(10)
-//            make.size.equalTo(CGSize(width: 60, height: 60))
             make.width.equalTo(60)
             make.height.equalTo(60)
         }
@@ -92,7 +91,6 @@ class JFGoodListCell: UITableViewCell {
         addCartButton.snp_makeConstraints { (make) -> Void in
             make.right.equalTo(-12)
             make.top.equalTo(25)
-//            make.size.equalTo(CGSize(width: 80, height: 30))
             make.width.equalTo(80)
             make.height.equalTo(30)
         }
