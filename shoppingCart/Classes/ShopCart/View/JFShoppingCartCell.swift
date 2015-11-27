@@ -86,6 +86,13 @@ class JFShoppingCartCell: UITableViewCell {
             make.centerY.equalTo(contentView.snp_centerY)
         }
         
+        iconView.snp_makeConstraints { (make) -> Void in
+            make.left.equalTo(42)
+            make.top.equalTo(10)
+            make.width.equalTo(60)
+            make.height.equalTo(60)
+        }
+        
         titleLabel.snp_makeConstraints { (make) -> Void in
             make.top.equalTo(contentView.snp_top).offset(10)
             make.left.equalTo(iconView.snp_right).offset(12)
@@ -99,6 +106,34 @@ class JFShoppingCartCell: UITableViewCell {
         oldPriceLabel.snp_makeConstraints { (make) -> Void in
             make.top.equalTo(newPriceLabel.snp_bottom).offset(5)
             make.right.equalTo(-12)
+        }
+        
+        addAndsubtraction.snp_makeConstraints { (make) -> Void in
+            make.left.equalTo(120)
+            make.top.equalTo(40)
+            make.width.equalTo(100)
+            make.height.equalTo(30)
+        }
+        
+        subtractionButton.snp_makeConstraints { (make) -> Void in
+            make.left.equalTo(0)
+            make.top.equalTo(0)
+            make.width.equalTo(30)
+            make.height.equalTo(30)
+        }
+        
+        goodCountLabel.snp_makeConstraints { (make) -> Void in
+            make.left.equalTo(30)
+            make.top.equalTo(0)
+            make.width.equalTo(40)
+            make.height.equalTo(30)
+        }
+        
+        addButton.snp_makeConstraints { (make) -> Void in
+            make.left.equalTo(70)
+            make.top.equalTo(0)
+            make.width.equalTo(30)
+            make.height.equalTo(30)
         }
         
     }
@@ -142,7 +177,6 @@ class JFShoppingCartCell: UITableViewCell {
     /// 商品图片
     private lazy var iconView: UIImageView = {
         let iconView = UIImageView()
-        iconView.frame = CGRectMake(42, 10, 60, 60);
         iconView.layer.cornerRadius = 30
         iconView.layer.masksToBounds = true
         return iconView
@@ -151,7 +185,6 @@ class JFShoppingCartCell: UITableViewCell {
     /// 商品标题
     private lazy var titleLabel: UILabel = {
         let titleLabel = UILabel()
-        
         return titleLabel
     }()
     
@@ -172,7 +205,6 @@ class JFShoppingCartCell: UITableViewCell {
     // 加减操作的view
     private lazy var addAndsubtraction: UIView = {
         let addAndsubtraction = UIView()
-        addAndsubtraction.frame = CGRect(x: 120, y: 40, width: 100, height: 30)
         addAndsubtraction.backgroundColor = UIColor(white: 0.9, alpha: 0.8)
         return addAndsubtraction
     }()
@@ -182,7 +214,6 @@ class JFShoppingCartCell: UITableViewCell {
         let subtractionButton = UIButton(type: UIButtonType.Custom)
         subtractionButton.tag = 10;
         subtractionButton.setBackgroundImage(UIImage(named: "subtraction_icon"), forState: UIControlState.Normal)
-        subtractionButton.frame = CGRect(x: 0, y: 0, width: 30, height: 30)
         subtractionButton.addTarget(self, action: "didTappedCalculateButton:", forControlEvents: UIControlEvents.TouchUpInside)
         return subtractionButton
     }()
@@ -191,7 +222,6 @@ class JFShoppingCartCell: UITableViewCell {
     private lazy var goodCountLabel: UILabel = {
         let goodCountLabel = UILabel()
         goodCountLabel.textAlignment = NSTextAlignment.Center
-        goodCountLabel.frame = CGRect(x: 30, y: 0, width: 40, height: 30)
         return goodCountLabel
     }()
     
@@ -200,7 +230,6 @@ class JFShoppingCartCell: UITableViewCell {
         let addButton = UIButton(type: UIButtonType.Custom)
         addButton.tag = 11
         addButton.setBackgroundImage(UIImage(named: "add_icon"), forState: UIControlState.Normal)
-        addButton.frame = CGRect(x: 70, y: 0, width: 30, height: 30)
         addButton.addTarget(self, action: "didTappedCalculateButton:", forControlEvents: UIControlEvents.TouchUpInside)
         return addButton
     }()

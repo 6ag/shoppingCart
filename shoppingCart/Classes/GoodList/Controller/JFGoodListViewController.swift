@@ -94,6 +94,13 @@ class JFGoodListViewController: UIViewController {
         tableView.snp_makeConstraints { (make) -> Void in
             make.edges.equalTo(view.snp_edges)
         }
+        
+        addCountLabel.snp_makeConstraints { (make) -> Void in
+            make.right.equalTo(-12)
+            make.top.equalTo(10.5)
+            make.width.equalTo(15)
+            make.height.equalTo(15)
+        }
     }
 
     // MARK: - 懒加载
@@ -130,7 +137,6 @@ class JFGoodListViewController: UIViewController {
         addCountLabel.layer.borderWidth = 1
         addCountLabel.layer.borderColor = UIColor.redColor().CGColor
         addCountLabel.hidden = true
-        addCountLabel.frame = CGRect(x: SCREEN_WIDTH - 25, y: 10.5, width: 15, height: 15)
         return addCountLabel
     }()
 

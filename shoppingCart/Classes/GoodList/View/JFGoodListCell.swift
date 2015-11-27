@@ -71,6 +71,14 @@ class JFGoodListCell: UITableViewCell {
         contentView.addSubview(addCartButton)
         
         // 约束子控件
+        iconView.snp_makeConstraints { (make) -> Void in
+            make.left.equalTo(12)
+            make.top.equalTo(10)
+//            make.size.equalTo(CGSize(width: 60, height: 60))
+            make.width.equalTo(60)
+            make.height.equalTo(60)
+        }
+        
         titleLabel.snp_makeConstraints { (make) -> Void in
             make.top.equalTo(contentView.snp_top).offset(10)
             make.left.equalTo(iconView.snp_right).offset(12)
@@ -79,6 +87,14 @@ class JFGoodListCell: UITableViewCell {
         descLabel.snp_makeConstraints { (make) -> Void in
             make.top.equalTo(titleLabel.snp_bottom).offset(12)
             make.left.equalTo(iconView.snp_right).offset(12)
+        }
+        
+        addCartButton.snp_makeConstraints { (make) -> Void in
+            make.right.equalTo(-12)
+            make.top.equalTo(25)
+//            make.size.equalTo(CGSize(width: 80, height: 30))
+            make.width.equalTo(80)
+            make.height.equalTo(30)
         }
         
     }
@@ -105,7 +121,6 @@ class JFGoodListCell: UITableViewCell {
     /// 商品图片
     private lazy var iconView: UIImageView = {
         let iconView = UIImageView()
-        iconView.frame = CGRectMake(12, 10, 60, 60);
         iconView.layer.cornerRadius = 30
         iconView.layer.masksToBounds = true
         return iconView
@@ -128,7 +143,6 @@ class JFGoodListCell: UITableViewCell {
     /// 添加按钮
     private lazy var addCartButton: UIButton = {
         let addCartButton = UIButton(type: UIButtonType.Custom)
-        addCartButton.frame = CGRectMake(SCREEN_WIDTH - 92, 25, 80, 30)
         addCartButton.setBackgroundImage(UIImage(named: "button_cart_add"), forState: UIControlState.Normal)
         addCartButton.setTitle("购买", forState: UIControlState.Normal)
         
