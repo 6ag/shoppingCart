@@ -105,6 +105,13 @@ class JFShoppingCartViewController: UIViewController {
             make.center.equalTo(bottomView.snp_center)
         }
         
+        buyButton.snp_makeConstraints { (make) -> Void in
+            make.right.equalTo(-12)
+            make.top.equalTo(9)
+            make.width.equalTo(88)
+            make.height.equalTo(30)
+        }
+        
     }
     
     // MARK: - 懒加载
@@ -156,7 +163,6 @@ class JFShoppingCartViewController: UIViewController {
         let buyButton = UIButton(type: UIButtonType.Custom)
         buyButton.setTitle("付款", forState: UIControlState.Normal)
         buyButton.setBackgroundImage(UIImage(named: "button_cart_add"), forState: UIControlState.Normal)
-        buyButton.frame = CGRect(x: SCREEN_WIDTH - 100, y: 9, width: 88, height: 30)
         buyButton.layer.cornerRadius = 15
         buyButton.layer.masksToBounds = true
         return buyButton
